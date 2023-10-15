@@ -1,0 +1,25 @@
+{
+  "name": "com.iron-mountain.account-management",
+  "version": "1.0.0",
+  "displayName": "Account Management",
+  "description": "A system for saving, loading, and deleting player accounts.",
+  "unity": "2019.1",
+  "keywords": [
+    "resources",
+    "tools"
+  ],
+  "author": "Chris Monteferrante <ludachrismonte@gmail.com>",
+  "type": "tool",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Iron-Mountain-Software/account-management.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Iron-Mountain-Software/account-management/issues"
+  },
+  "homepage": "https://github.com/Iron-Mountain-Software/account-management#readme",
+  "dependencies": {
+    "com.iron-mountain.save-system": "1.0.2"
+  }
+}
