@@ -29,14 +29,14 @@ namespace IronMountain.AccountManagement
             }
         }
 
-        public static void CreateAccount()
+        public static Account CreateAccount()
         {
             string id = Guid.NewGuid().ToString();
             Account account = new Account(id);
             account.Version = Application.version;
             account.Initialize();
             RegisterAccount(account);
-            Login(account);
+            return account;
         }
 
         public static void Login(Account account)

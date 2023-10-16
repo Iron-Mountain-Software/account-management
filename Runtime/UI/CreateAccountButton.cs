@@ -6,6 +6,8 @@ namespace IronMountain.AccountManagement.UI
     [RequireComponent(typeof(Button))]
     public class CreateAccountButton : MonoBehaviour
     {
+        [SerializeField] private bool logInToCreatedAccount = true;
+        [SerializeField] private bool doNothingIfLoggedIn = true;
         [SerializeField] private Button button;
 
         private void Awake()
@@ -30,7 +32,9 @@ namespace IronMountain.AccountManagement.UI
 
         private void OnClick()
         {
-            AccountsManager.CreateAccount();
+            if (doNothingIfLoggedIn && Account.Current is {IsDefault: false}) return;
+            Account account = AccountsManager.CreateAccount();
+            if (logInToCreatedAccount) AccountsManager.Login(account);
         }
     }
 }
