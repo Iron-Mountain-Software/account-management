@@ -29,6 +29,16 @@ namespace IronMountain.AccountManagement
             }
         }
 
+        private static bool _initialized;
+
+        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
+        public static void Initialize()
+        {
+            if (_initialized) return;
+            _initialized = true;
+            RefreshAccounts();
+        }
+
         public static Account CreateAccount()
         {
             string id = Guid.NewGuid().ToString();

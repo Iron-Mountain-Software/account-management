@@ -1,6 +1,6 @@
 {
   "name": "com.iron-mountain.account-management",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "displayName": "Account Management",
   "description": "A system for saving, loading, and deleting player accounts.",
   "unity": "2019.1",
