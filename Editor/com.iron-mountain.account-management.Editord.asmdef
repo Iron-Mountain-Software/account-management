@@ -1,5 +1,5 @@
 {
-    "name": "com.iron-mountain.account-management.Editor",
+    "name": "com.irdon-mountain.account-management.Editor",
     "rootNamespace": "IronMountain.AccountManagement",
     "references": [
         "GUID:6e9fd917353714b49b5e3872da77e405"
