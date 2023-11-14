@@ -1,10 +1,14 @@
 # Account Management
+*Version: 1.0.5*
+## Description: 
 A system for saving, loading, and deleting player accounts.
-
-## Package Mirrors:
+## Dependencies: 
+* com.iron-mountain.save-system (1.0.4)
+## Package Mirrors: 
 [<img src='https://img.itch.zone/aW1nLzEzNzQ2ODg3LnBuZw==/original/npRUfq.png'>](https://github.com/Iron-Mountain-Software/account-management.git)[<img src='https://img.itch.zone/aW1nLzEzNzQ2ODkyLnBuZw==/original/Fq0ORM.png'>](https://www.npmjs.com/package/com.iron-mountain.account-management)[<img src='https://img.itch.zone/aW1nLzEzNzQ2ODk4LnBuZw==/original/Rv4m96.png'>](https://iron-mountain.itch.io/account-management)
-## Key Scripts & Components:
-1. public class **Account** : Object
+---
+## Key Scripts & Components: 
+1. public class **Account**
    * Actions: 
       * public event Action ***OnVersionChanged*** 
       * public event Action ***OnCreationTimeChanged*** 
@@ -19,7 +23,23 @@ A system for saving, loading, and deleting player accounts.
       * public String ***LastLoginTime***  { get; set; }
    * Methods: 
       * public virtual void ***Initialize***()
-1. public static class **AccountsManager** : Object
+1. public static class **AccountsManager**
+### Saved Values
+1. public class **AccountScriptedSavedBool** : ScriptedSavedBool
+   * Properties: 
+      * public String ***Directory***  { get; }
+1. public class **AccountScriptedSavedFloat** : ScriptedSavedFloat
+   * Properties: 
+      * public String ***Directory***  { get; }
+1. public class **AccountScriptedSavedInt** : ScriptedSavedInt
+   * Properties: 
+      * public String ***Directory***  { get; }
+1. public class **AccountScriptedSavedList** : ScriptedSavedList
+   * Properties: 
+      * public String ***Directory***  { get; }
+1. public class **AccountScriptedSavedString** : ScriptedSavedString
+   * Properties: 
+      * public String ***Directory***  { get; }
 ### U I
 1. public class **AccountDisplay** : MonoBehaviour
    * Actions: 
