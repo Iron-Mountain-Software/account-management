@@ -1,5 +1,5 @@
 # Account Management
-*Version: 1.1.0*
+*Version: 1.1.1*
 ## Description: 
 A system for saving, loading, and deleting player accounts.
 ## Dependencies: 
